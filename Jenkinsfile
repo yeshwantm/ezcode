@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t yeshwantm/hello_world:latest .'
+				sh 'docker build -t yeshwantm/ezcode:latest .'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push yeshwantm/hello_world:latest'
+				sh 'docker push yeshwantm/ezcode:latest'
 			}
 		}
 	}
